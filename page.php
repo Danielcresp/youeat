@@ -2,5 +2,4 @@
 
 <?php echo  "Hola desde page.php" ?>
 
-</body>
-</html>
+<?php get_footer(); ?>

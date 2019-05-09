@@ -21,31 +21,37 @@
                     $args = array(
                         'theme_location' => 'social-menu',
                         'container' => 'nav',
-                        'container_class' => 'menu-social',
-                        'container_id' => 'menu-social',
+                        'container_class' => 'sociales',
+                        'container_id' => 'sociales',
                         'link_before' => '<span class="sr-text">',
                         'link_after' => '</span>'
                     );
                     wp_nav_menu($args);
                     ?>
                 </div>
+                <div class="direcciones">
+                    <p>6345 Avenida de la Pizza CA 543435</p>
+                    <p>Telefono: +1-342-533-5343</p>
+                </div>
             </div> <!-- .redes -->
-            <div class="direcciones">
-                <p>6345 Avenida de la Pizza CA 543435</p>
-                <p>Telefono: +1-342-533-5343</p>
-            </div>
         </div><!-- .contenedor -->
     </header>
-    <nav class="menu-sitio">
-        <div class="contenedor navegacion">
-            <?php 
-                $args = array(
-                    'theme_location' => 'header-menu',
-                    'container' => 'nav',
-                    'container_class' => 'menu-sitio'
-                );
-                wp_nav_menu( $args);
-                 //menu
-            ?>
+    <div class="menu-pricipal">
+        <div class="mobile-menu">
+            <a href="#" class="movile">Menu</a>
         </div>
-    </nav>
+        <nav class="menu-sitio">
+            <div class="contenedor navegacion">
+                <?php 
+                    $args = array(
+                        'theme_location' => 'header-menu',
+                        'container' => 'nav',
+                        'container_class' => 'menu-sitio'
+                    );
+                    wp_nav_menu( $args);
+                    //menu
+                ?>
+            </div>
+        </nav>
+    </div>
+
