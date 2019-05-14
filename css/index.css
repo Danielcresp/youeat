@@ -1,3 +1,4 @@
+
 html{
     box-sizing:border-box;
 }
@@ -11,6 +12,25 @@ html{
 }
 .text-centrado{
     text-align: center;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
+h1{
+    font-size: 44px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 28px;
+}
+h4{
+    font-size: 24px;
 }
 /* ---- ---- ENCABEZADO ---- ---- */
 
@@ -109,7 +129,7 @@ nav .menu-sitio ul li{
     text-transform: uppercase;
     color: #000000;
 }
-.current_page_item{
+.menu-sitio ul .current_page_item{
     border-bottom: 8px solid #a61206;
 }
 nav .menu-sitio ul li:hover{
@@ -156,7 +176,7 @@ nav .menu-sitio ul li:hover{
     display: table;
     position: relative;
 }
-hero::after{ /* ---- ---- es una capa sobre efondo  ---- ---- */
+.hero::after{ /* ---- ---- es una capa sobre efondo  ---- ---- */
     position: absolute;
     top: 0;
     left: 0;
@@ -198,4 +218,39 @@ hero::after{ /* ---- ---- es una capa sobre efondo  ---- ---- */
 .contenido-paguinas p{
     font-size: 18px;
     line-height: 50px;
+}
+
+/* ---- ---- FOOTER ---- ---- */
+footer{
+    margin-top: 30px;
+    padding: 30px 0;
+    border-top:1px solid #c1c1c1;
+    text-align: center;
+}
+footer nav ul{
+    list-style: none;
+}
+footer nav ul li{
+    display: inline;
+}
+footer nav ul li:last-child .separador{ /* ---- ---- elimina ultimo cepoarador y ocultar ---- ---- */
+    display: none;
+}
+footer nav ul li a {
+    color: #000000;
+    text-transform: uppercase; /* ---- ---- Traformar a mayuscula ---- ---- */
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+footer .ubicacion{
+    margin-top: 20px
+}
+footer p{
+    margin: 0 0 5px 0;
+    font-size: 14px;
+}
+.copyright{
+    margin-top: 20px;
 }

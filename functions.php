@@ -7,8 +7,10 @@ function youeat_setup(){
 
 //Funcion para añadir JS y CSS
 function youeat_styles(){
+    https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700,900
 
     //rigistrar stylos css
+    wp_register_style('google_fonts',"https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700,900",array() ,'1.0');
     wp_register_style('normalize',get_template_directory_uri().'/css/normalize.css',array() ,'8.0');
     wp_register_style('style',get_template_directory_uri().'style.css',array() ,'1.0'); //css registrar en wordpress
     wp_register_style('bootstrap',"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
@@ -21,7 +23,7 @@ function youeat_styles(){
     wp_enqueue_script('scripts',get_template_directory_uri().'/js/index.js',array('jquery'),'1.0.0',true);
 
     //Obtener 
-
+    wp_enqueue_style('google_fonts');  
     wp_enqueue_style('style');  
     wp_enqueue_style('normalize');  
     wp_enqueue_style('fontawesome');  
@@ -38,6 +40,7 @@ function youeat_menus(){
     register_nav_menus(array(
         'header-menu' => __('Header Menu','youeat'),
         'social-menu' => __('Social Menu','youeat'),
+        'footer-menu' => __('Header Menu','youeat'),
     ));
 }
 
