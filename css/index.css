@@ -9,6 +9,9 @@ html{
     width: 100%;
     margin: 0 auto;
 }
+.text-centrado{
+    text-align: center;
+}
 /* ---- ---- ENCABEZADO ---- ---- */
 
 header{
@@ -51,6 +54,7 @@ div.logo{
     text-align: center;
     list-style: none;
     padding: 0;
+    text-decoration: none;
 }
 @media only screen and (min-width:768px){
     .sociales ul{
@@ -60,6 +64,7 @@ div.logo{
 nav .sociales ul li{
     position: relative;
     display: inline-block;
+    text-decoration: none;
 }
 
 nav .sociales ul li a::before{
@@ -92,6 +97,9 @@ nav .menu-sitio ul{
     padding: 0;
     width: 100%;
 } 
+nav .menu-sitio ul li a{
+    text-decoration: none;
+}
 nav .menu-sitio ul li{
     text-align: center;
     padding: 20px 0;
@@ -133,4 +141,61 @@ nav .menu-sitio ul li:hover{
     .mobile-menu a {
         display: none;
     }
+}
+
+/* ---- ---- TEmplate Contenido ---- ---- */
+
+.hero{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; /* ---- ---- ajustar a espacion disponible ---- ---- */
+    background-color: #000000;
+    height: 450px;
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+    position: relative;
+}
+hero::after{ /* ---- ---- es una capa sobre efondo  ---- ---- */
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6); 
+}
+.contenido-hero{
+    display: table-cell;
+    vertical-align: middle;
+    color: #ffffff;
+    position: relative;
+    width:  100vw;
+    z-index: 2;
+}
+@media only screen and (min-width:768px){
+   .text-hero{
+       width: 80%;
+       margin: 0 auto;
+   }
+}
+@media only screen and (min-width:992px){
+    .text-hero{
+        width: 60%;
+    }
+ }
+.principal{
+    padding: 60px;
+    background-color: #ffffff;
+    position: relative;
+}
+@media only screen and (min-width:768px){
+    .principal{
+        margin-top: -90px;
+    }
+}
+
+.contenido-paguinas p{
+    font-size: 18px;
+    line-height: 50px;
 }

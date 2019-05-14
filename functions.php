@@ -1,7 +1,12 @@
 <?php
+//Función de imagen destacada
+function youeat_setup(){
+    add_theme_support('post-thumbnails');
+}
 
+
+//Funcion para añadir JS y CSS
 function youeat_styles(){
-
 
     //rigistrar stylos css
     wp_register_style('normalize',get_template_directory_uri().'/css/normalize.css',array() ,'8.0');
@@ -37,7 +42,7 @@ function youeat_menus(){
 }
 
 
-
+add_action('after_setup_theme','youeat_setup');
 add_action('wp_enqueue_scripts','youeat_styles');
 add_action('init','youeat_menus');
 

@@ -1,8 +1,7 @@
-$ = jQuery-noConflict();
+$ = jQuery.noConflict();
 //OCultar y mostrar menu
 $(document).ready(function(){
     $('.mobile-menu a').on('click', function(){
-        alert ("hola click")
         $('nav .menu-sitio').toggle();
     });
     //Reacciones a Resize en la pantalla
