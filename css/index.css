@@ -129,6 +129,7 @@ nav .menu-sitio ul li{
     text-transform: uppercase;
     color: #000000;
 }
+
 .menu-sitio ul .current_page_item{
     border-bottom: 8px solid #a61206;
 }

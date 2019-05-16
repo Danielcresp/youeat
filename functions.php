@@ -2,6 +2,8 @@
 //Función de imagen destacada
 function youeat_setup(){
     add_theme_support('post-thumbnails');
+
+    add_image_size('nosotros',437,291,true); //Agregar un nuevo tamaño de imagen 
 }
 
 
