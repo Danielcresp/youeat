@@ -32,6 +32,12 @@ h3{
 h4{
     font-size: 24px;
 }
+.clear,
+.clear::after{
+    content: '';
+    clear: both;
+    display:block;
+}
 /* ---- ---- ENCABEZADO ---- ---- */
 
 header{
@@ -254,4 +260,53 @@ footer p{
 }
 .copyright{
     margin-top: 20px;
+}
+/* ---- ---- Cajas de imagenes sobre nosotros ---- ---- */
+.info-cajas-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.informacion-caja > div img{
+    width: 80%;
+}
+
+.informacion-caja > div{
+    text-align: center;
+}
+@media only screen and (min-width:400px){
+    .informacion-caja > div{
+        width: 50%;
+        float: left;
+    }
+    .info-cajas-main{
+        display: row;
+        flex-direction: row;
+    }
+}
+.informacion-caja > div:last-child{
+    width: 97%;
+}
+@media only screen and (min-width:768px){
+    .informacion-caja > div{
+        width: 97%;
+    }
+    .informacion-caja > div:last-child{
+        width: 97%;
+    }
+}
+.pin1{
+    background-color: #f19f30;
+}
+.pin2{
+    background-color: #3d8833;
+}
+.pin3{
+    background-color: #1c717c;
+}
+
+.cont{
+    position: relative;
+    max-width: 500px;
+    width: 100%;
 }
