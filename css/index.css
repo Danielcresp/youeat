@@ -20,6 +20,9 @@ h1,h2,h3,h4,h5{
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
 }
+.text-rojo{
+    color: #a61206;
+}
 h1{
     font-size: 44px;
 }
@@ -31,6 +34,10 @@ h3{
 }
 h4{
     font-size: 24px;
+}
+img{
+    max-width: 100%;
+    height: auto;
 }
 .clear,
 .clear::after{
@@ -266,6 +273,7 @@ footer p{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* padding: 0 60px; */
 }
 .informacion-caja > div img{
     width: 80%;
@@ -309,4 +317,51 @@ footer p{
     position: relative;
     max-width: 500px;
     width: 100%;
+}
+
+/* especialidades */
+
+.nuetras-espicialedades{
+    padding: 0 60px;
+}
+.texto-especialidad{
+    padding: 20px;
+}
+.texto-especialidad h4{
+    border-bottom: 1px solid #dfdfdd;
+    padding-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+.texto-especialidad h4 span{
+    float: right;
+    font-size: 30px;
+    color: #f19f30;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.texto-especialidad p{
+    color: #3d3d3d;
+    line-height: 30px;
+}
+/* GRID */
+
+@media only screen and (min-width:768px){
+    .contenedor-grid{
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .contenedor-grid::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    [class*="columnas"]{
+        padding: 0 10px;
+        float: left;
+    }
+    .columnas2-4 {
+        width: 31%;
+    }
 }
