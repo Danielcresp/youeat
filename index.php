@@ -13,7 +13,7 @@
         </div>
             
         <div class="principal contenedor">
-             <main class="text-centrado contenido-paguinas">
+             <main class="columnas2-3 contenido-paguinas">
                 <?php  while(have_posts()): the_post();?> <!-- Recorrer informacio -->
                     <article class="entrada-blog">
                         <a href="<?php the_permalink();?>">
@@ -42,6 +42,7 @@
                      <?php the_title();?>
                 <?php endwhile; ?>
             </main>
+            <?php  get_sidebar()?>
         </div>    
 
 

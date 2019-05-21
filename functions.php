@@ -88,9 +88,22 @@ function lapizzeria_especialidades() {
 	register_post_type( 'especialidades', $args );
 }
 
+// WidGets
+function youeat_widgets(){
+    register_sidebar(array(
+        'name' => 'Blog Sidebar',
+        'id'   => 'blog_sidebar',
+        'after_widget' => '<div class="widget">',
+        'before_widget' => '</div>',
+        'after_title' => '<h3>',
+        'before_title' => '</h3>'
+    ));
+}
+
 
 add_action('after_setup_theme','youeat_setup');
 add_action('wp_enqueue_scripts','youeat_styles');
 add_action('init','youeat_menus');
+add_action('widgets_init','youeat_widgets');
 
 

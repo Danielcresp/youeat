@@ -361,9 +361,25 @@ footer p{
         padding: 0 10px;
         float: left;
     }
+    .columnas1-4 {
+        width: 25%;
+    }
     .columnas2-4 {
         width: 31%;
     }
+    .columnas2-44 {
+        width: 50%;
+    }
+    .columnas3-4 {
+        width: 75%;
+    }
+    .columnas1-4 {
+        width: 33.3%;
+    }
+    .columnas2-3 {
+        width: 66.6%;
+    }
+
 }
 
 /* ---- ---- BOLG ---- ---- */
@@ -412,7 +428,7 @@ header.informacion-entrada p.autor{
     margin-top: 10px;
     font-family: 'Releway', sans-serif;
 }
-p.autor{
+p.autor i{ 
     font-size:30px;
     color: #f19f30;
 }
@@ -420,7 +436,7 @@ div.contenido-entrada p{
     margin-bottom: 0;
 
 }
-.botton.rojo{
+.button.rojo{
     background-color: #a61206; 
     font-family: 'Open Sans' ,sans-serif;
     font-size: 16px;
@@ -432,7 +448,7 @@ div.contenido-entrada p{
     text-decoration: none;
     transition: all .5s ease; 
 }
-.botton.rojo:hover{
+.button.rojo:hover{
     background-color: #f19f30;
     letter-spacing: 2px;
 }
