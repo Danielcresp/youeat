@@ -11,9 +11,9 @@
                 </div>
             </div>
         </div>
-            
-        <div class="principal contenedor">
-             <main class="columnas2-3 contenido-paguinas">
+    <div class="principal contenedor">
+         <div class="contenedor-grid">
+             <main class="columnas2-44 contenido-paguinas">
                 <?php  while(have_posts()): the_post();?> <!-- Recorrer informacio -->
                     <article class="entrada-blog">
                         <a href="<?php the_permalink();?>">
@@ -27,7 +27,7 @@
                                 </time>
                             </div>
                             <div class="titulo-entrada">
-                                <?php the_title('<h1>','</h1>'); ?>
+                                <?php the_title('<h3>','</h3>'); ?>
                                 <p class="autor">
                                     <i class="fad fa-user" aria-hidden='true'></i>
                                     <?php the_author();?>
@@ -39,11 +39,14 @@
                             <a href="<?php the_permalink();?>" class="button rojo">Leer Más</a>
                         </div>
                     </article>
-                     <?php the_title();?>
                 <?php endwhile; ?>
             </main>
-            <?php  get_sidebar()?>
-        </div>    
+            <div class="columnas2-4">
+                 <?php  get_sidebar()?>
+            </div>
+        </div>  <!--  contendor grig -->
+        
+    </div> <!-- principal -->
 
 
 <?php get_footer(); ?>

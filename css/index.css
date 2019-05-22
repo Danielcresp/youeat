@@ -394,11 +394,11 @@ header.informacion-entrada{
 header.informacion-entrada div.fecha{
     background-color: #f19f30;
     float: left;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     text-align: center;
     padding-top: 5px;
-    margin-right: 20px; 
+    margin-right: 2px; 
 }
 
 header.informacion-entrada div.fecha time{
@@ -412,13 +412,24 @@ header.informacion-entrada div.fecha time span{
     clear: both;
     text-transform: uppercase;
 }
+
+header.informacion-entrada  .titulo-entrada h3{
+    margin-top: 20px;
+    margin: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+header.informacion-entrada  .titulo-entrada p{
+    margin: 0;
+}
 header.informacion-entrada{
     float: right;
-    width:  calc(100% - 90px);
+    width:  calc(100% - 10px);
 }
 header.informacion-entrada h2{
     margin: 0;
-    font-size: 24px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -433,8 +444,7 @@ p.autor i{
     color: #f19f30;
 }
 div.contenido-entrada p{
-    margin-bottom: 0;
-
+    margin-bottom: -30;
 }
 .button.rojo{
     background-color: #a61206; 
@@ -444,6 +454,7 @@ div.contenido-entrada p{
     color: #ffffff;
     padding: 15px 80px;
     margin-top: 20px;
+    margin-bottom: 20px;
     display: inline-block;
     text-decoration: none;
     transition: all .5s ease; 
@@ -451,4 +462,32 @@ div.contenido-entrada p{
 .button.rojo:hover{
     background-color: #f19f30;
     letter-spacing: 2px;
+}
+
+/* ---- ---- SIDEBAR ---- ---- */
+form.searchform{
+    position: relative;
+}
+form.searchform #searchsubmit{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 42px;
+    height: 42px;
+    background-color: #a61206;
+    text-indent: -999px;
+    border: none;
+    cursor: pointer;
+}
+from.searchfrom div input{
+    width: 100%;
+    padding: 10px;
+}
+aside .widget{
+    margin-bottom: 20px;
+}
+aside .widget h3{
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
 }
