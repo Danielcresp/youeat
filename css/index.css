@@ -143,7 +143,8 @@ nav .menu-sitio ul li{
     color: #000000;
 }
 
-.menu-sitio ul .current_page_item{
+.menu-sitio ul .current_page_item,
+nav.menu-sitio ul li.current_page_parent a{
     border-bottom: 8px solid #a61206;
 }
 nav .menu-sitio ul li:hover{
@@ -464,6 +465,29 @@ div.contenido-entrada p{
     letter-spacing: 2px;
 }
 
+ul.lista-comentarios,
+ul.lista-comentarios ul{
+    list-style: none;
+}
+ul.lista-comentarios li.comment{
+    background-color: #e1e1e1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px; 
+}
+
+ul.lista-comentarios li.comment .comment-author{
+    margin-bottom: 20px;
+}
+ul.lista-comentarios li.comment a{
+    color: #a61206;
+    text-decoration: none;
+}
+ul.lista-comentarios li.comment ul.children li{
+    background-color: white;
+    margin-top: 20px;
+}
+
 /* ---- ---- SIDEBAR ---- ---- */
 form.searchform{
     position: relative;
@@ -490,4 +514,50 @@ aside .widget h3{
     font-weight: 700;
     font-size: 24px;
     text-transform: uppercase;
+}
+
+/* ---- ----Comentario  ---- ---- */
+div.comentarios h3{
+    font-weight: 700;
+    text-align: center;
+}
+
+@media only screen and (min-width:992px){
+    div.comentarios{
+        width: 60%;
+    }
+}
+div.comentarios form label{
+    width: 300px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+div.comentarios form input,
+div.comentarios form textarea{
+    padding: 10px;
+    width: calc(100% - 220px);
+}
+
+
+div.comentarios form input[type='submit']{
+    background-color: #a61206;
+    font-family: 'Opn Sans', sans-serif;
+    font-size: 16px;
+    width: auto;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 15px 80px;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: backgroud-color .5s ease;
+    cursor: pointer;
+}
+div.comentarios form input[type='submit']{
+    margin: 0 auto;
+    display: block;
+    border: none;
 }
