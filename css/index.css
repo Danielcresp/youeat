@@ -144,7 +144,7 @@ nav .menu-sitio ul li{
 }
 
 .menu-sitio ul .current_page_item,
-nav.menu-sitio ul li.current_page_parent a{
+nav.menu-sitio ul li.current_page_parent{
     border-bottom: 8px solid #a61206;
 }
 nav .menu-sitio ul li:hover{
@@ -560,4 +560,26 @@ div.comentarios form input[type='submit']{
     margin: 0 auto;
     display: block;
     border: none;
+}
+/* 
+ Paguinacion 
+*/
+.paginacion{
+    margin-top: 20px;
+    background-color: #e1e1e1;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 20px; 
+}
+
+.paginacion a{
+    color: #a61206;
+    text-decoration: none;
+}
+.paginacion a:hover{
+    text-decoration: underline;
+}
+.paginacion .current{
+    font-weight: bold;
+    color: #555555;
 }

@@ -40,9 +40,21 @@
                         </div>
                     </article>
                 <?php endwhile; ?>
+                <div class="paginacion">
+                <?php echo paginate_links();?> <!-- Paguinacion -->
+                </div>
+
             </main>
             <div class="columnas2-4">
-                 <?php  get_sidebar()?>
+                <!-- Primer metodo  -->
+                 <?php get_sidebar(); ?> 
+                <!-- Segundo Metodo -->
+                 <div class="anteriores">
+                     <?php //next_posts_link('Anteriores');?>
+                 </div>
+                 <div class="siguientes">
+                     <?php // previous_posts_link('Siguiente');?>
+                 </div>
             </div>
         </div>  <!--  contendor grig -->
         
