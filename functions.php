@@ -21,12 +21,16 @@ function youeat_styles(){
     wp_register_style('bootstrapjs',"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js",array('jquery'));
     wp_register_style('index',get_stylesheet_directory_uri().'/css/index.css');
     wp_register_style('fontawesome',get_stylesheet_directory_uri().'/css/font_awesome.css');
+    wp_register_style('fluidboxcss',get_stylesheet_directory_uri().'/css/fluidbox.css');
 
 
     // regitrar JS
-    wp_enqueue_script('scripts',get_template_directory_uri().'/js/index.js',array('jquery'),'1.0.0',true);
+    wp_enqueue_script('fluidbox',get_template_directory_uri().'/js/jquery.fluidbox.js',array('jquery'),'1.0.0',true);
+    wp_enqueue_script('scripts',get_template_directory_uri().'/js/index.js',array('jquery','fluidbox'),'1.0.0',true);
 
     //Obtener 
+    wp_enqueue_style('fluidboxcss');  
+    wp_enqueue_style('fluidbox');  
     wp_enqueue_style('google_fonts');  
     wp_enqueue_style('style');  
     wp_enqueue_style('normalize');  
