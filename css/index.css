@@ -583,3 +583,18 @@ div.comentarios form input[type='submit']{
     font-weight: bold;
     color: #555555;
 }
+
+/* ---- ---- Galeria ---- ---- */
+.wp-block-gallery li figure img{
+    width: 50%;
+    margin: 0;
+}
+@media only screen and (max-width:767px){
+    .wp-block-gallery li figure{
+        width: 75%;
+        width: calc((100% - 6px));
+    }
+    .blocks-gallery-item{
+        margin-right: 0px;    
+    }
+}
