@@ -30,6 +30,7 @@
                         <textarea name="mensaje" placeholder="mensaje" require></textarea>
                     </div>
                     <input type="submit" value="Enviar" name="Enviar" class="button rojo">
+                    <input type="hidden" value="1" name="oculto">
                 </form>
             </main>
         </div>    
