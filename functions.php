@@ -1,4 +1,6 @@
 <?php
+require get_template_directory().'/inc/database.php';
+
 //Función de imagen destacada
 function youeat_setup(){
     add_theme_support('post-thumbnails');
