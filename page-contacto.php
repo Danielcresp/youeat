@@ -21,7 +21,7 @@
                         <input type="datetime-local" name="fecha" placeholder="fecha" require>
                     </div>
                     <div class="campo">
-                        <input type="email" name="email" placeholder="email" require>
+                        <input type="correo" name="correo" placeholder="correo" require>
                     </div>
                     <div class="campo">
                         <input type="tel" name="telefono" placeholder="telefono" require>
