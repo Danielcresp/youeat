@@ -1,7 +1,10 @@
 <?php
 //Tablas Personalizadas
 require get_template_directory().'/inc/database.php';
+//Funciones para las reservaciones
 require get_template_directory().'/inc/reservaciones.php';
+//Crear opciones para los templates
+require get_template_directory().'/inc/opciones.php';
 
 //Función de imagen destacada
 function youeat_setup(){
