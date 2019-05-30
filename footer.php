@@ -8,8 +8,8 @@
         wp_nav_menu( $args );
     ?>
     <div class="ubicacion">
-                    <p>6345 Avenida de la Pizza CA 543435</p>
-                    <p>Telefono: +1-342-533-5343</p>
+        <p><?php echo esc_html(get_option('lapizzeria_direccion'));?></p>
+        <p>Telefono:<?php echo esc_html(get_option('lapizzeria_telefono'));?></p>
     </div>
     <p class="copyright"> Todos los derechos reservados <?php echo date('Y') ?></p>
 </footer>

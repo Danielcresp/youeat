@@ -30,8 +30,8 @@
                     ?>
                 </div>
                 <div class="direcciones">
-                    <p>6345 Avenida de la Pizza CA 543435</p>
-                    <p>Telefono: +1-342-533-5343</p>
+                    <p><?php echo esc_html(get_option('lapizzeria_direccion'));?></p>
+                    <p>Telefono:<?php echo esc_html(get_option('lapizzeria_telefono'));?></p>
                 </div>
             </div> <!-- .redes -->
         </div><!-- .contenedor -->
