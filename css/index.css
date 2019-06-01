@@ -191,6 +191,7 @@ nav .menu-sitio ul li:hover{
     display: table;
     position: relative;
 }
+
 .hero::after{ /* ---- ---- es una capa sobre efondo  ---- ---- */
     position: absolute;
     top: 0;
@@ -464,6 +465,23 @@ div.contenido-entrada p{
     background-color: #f19f30;
     letter-spacing: 2px;
 }
+.button.naranja{
+    background-color: #f19f30; 
+    font-family: 'Open Sans' ,sans-serif;
+    font-size: 16px;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 15px 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: all .5s ease; 
+}
+.button.naranja:hover{
+    background-color: #a61206;
+    letter-spacing: 2px;
+}
 
 ul.lista-comentarios,
 ul.lista-comentarios ul{
@@ -647,3 +665,18 @@ form.reserva-contacto input[type="submit"]{
     margin: 0 auto;
     display: block;
 }
+/* Front page */
+
+.home .hero{
+    height: 650px;
+
+}
+@media only screen and (min-width:768px){
+    .home .hero .contenido-hero{
+    }
+    .texto-hero{
+        text-align: center;
+        margin: 0px;
+
+    }
+}  

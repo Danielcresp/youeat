@@ -4,10 +4,10 @@
         <div class="hero" style="background-image:url(<?php echo  get_the_post_thumbnail_url(); ?>);">
             <div class="contenido-hero">
                 <div class="texto-hero">
-                <?php echo esc_html(get_option('blogdescription')); ?>
+                    <h1>  <?php echo esc_html(get_option('blogdescription')); ?></h1>
                 <?php the_content();?> <!-- Comentario -->
                 <?php $url =get_page_by_title('Sobre Nosotros')?>
-                <a class="button rojo" href="<?php echo get_permalink($url->ID) ?>">Leer mas</a>
+                <a class="button naranja" href="<?php echo get_permalink($url->ID) ?>">Leer mas</a>
                 </div>
             </div>
         </div>
