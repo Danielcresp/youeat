@@ -12,6 +12,7 @@ function youeat_setup(){
 
     add_image_size('nosotros',437,291,true); //Agregar un nuevo tamaño de imagen 
     add_image_size('especialidades',765,515,true); //Agregar un nuevo tamaño de imagen 
+    add_image_size('especialidades_portrait',435,526,true); //Agregar un nuevo tamaño de imagen 
 
 }
 

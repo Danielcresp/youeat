@@ -682,3 +682,55 @@ form.reserva-contacto input[type="submit"]{
         font-size: 18px;
     }
 }  
+
+.contenido-especialidad{
+    position: relative;
+    overflow: hidden;
+}
+.informacion-platillo{
+    position: absolute;
+    top: 100%;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(241, 159, 48, .75);
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    padding: 5px;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+.informacion-platillo .precio{
+    font-size: 60px;
+    font-weight: bold;
+}
+.informacion-platillo p{
+    margin:0 0 10px 0;
+}
+.informacion-platillo h3{
+    font-size: 30px;
+    margin-top: 40px;
+    font-weight: 700;
+}
+@media only screen and (max-width: 767px){
+    div.contenido-especialidad{
+        overflow: visible;
+        display: block;
+        margin-bottom: 30px;
+    }
+    .contenido-especialidad img{
+        width: 100%;
+    }
+    .informacion-platillo{
+        position: relative;
+        opacity: 1;
+        background-color: #f19f30;
+        padding: 30px;
+    }
+}
+.contenido-especialidad:hover .informacion-platillo{
+    top: 0;
+    opacity: 1;
+}
