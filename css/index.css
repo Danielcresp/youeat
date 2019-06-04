@@ -669,14 +669,16 @@ form.reserva-contacto input[type="submit"]{
 
 .home .hero{
     height: 650px;
-
 }
 @media only screen and (min-width:768px){
-    .home .hero .contenido-hero{
-    }
+
     .texto-hero{
         text-align: center;
         margin: 0px;
 
+    }
+    .home .text-hero{
+        line-height: 40px;
+        font-size: 18px;
     }
 }  

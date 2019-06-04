@@ -11,11 +11,27 @@
                 </div>
             </div>
         </div>
+    <?php endwhile; ?>
             
         <div class="principal contenedor">
-             <main class="text-centrado contenido-paguinas">
+             <main class="contenedor-grid">
+                 <h2 class="text-rojo">Nuestras Especialidades</h2>
+                 <?php $args = array(
+                    'posts_per_page' => 3,
+                    'orderby' => 'rand',
+                    'post_type' => 'especialidades',
+                    'category_name' => 'pizza'
+                 );
+                 $especialidades = new WP_Query($args);
+                 while($especialidades->have_posts()): $especialidades->the_post();
+                 ?>
+                 <div class="especialidad columnas1-4">
+                     <?php the_title(); ?>
+                 </div>
+
+                <?php endwhile; wp_reset_postdata(); ?>
             </main>
         </div>    
-    <?php endwhile; ?>
+
 
 <?php get_footer(); ?>
