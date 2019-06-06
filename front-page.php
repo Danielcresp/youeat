@@ -40,6 +40,25 @@
                 <?php endwhile; wp_reset_postdata(); ?>
             </main>
         </div>    
-
+        <section class="ingredientes">
+            <div class="contenedor">
+                <div class="contenedor-grid">
+                    <?php while(have_posts()): the_post(); ?>
+                    <div class="columnas2-4">
+                        <?php the_field('contenido'); ?>
+                        <a href="<?php echo get_permalink($url->ID); ?>" class="button rojo">Leer más</a>
+                    </div>
+                    <div class="columnas2-4 imagen">
+                        <img src="<?php the_field('imagen'); ?>">
+                    </div>
+                </div>
+                <?php endwhile; ?>
+            </div>
+        </section>
+        <section  class="contenedor">
+            <h2 class="text-rojo texto.centrado">Galeria de Imagenes</h2>
+            <?php $url = get_page_by_title('Galeria'); ?>
+            <?php echo get_post_gallery($url->ID); ?>
+        </section>
 
 <?php get_footer(); ?>

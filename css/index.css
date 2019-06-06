@@ -619,7 +619,7 @@ div.comentarios form input[type='submit']{
 /* ---- ---- CONTACTo ---- ---- */
 
 div.contacto{
-    background-image: url(/img/Manjar.jpg);
+    background-image: url(../img/Manjar.jpg);
     background-repeat: no-repeat;
     background-position: top left;
 }
@@ -733,4 +733,32 @@ form.reserva-contacto input[type="submit"]{
 .contenido-especialidad:hover .informacion-platillo{
     top: 0;
     opacity: 1;
+}
+
+/* Ingredientes */
+
+.ingredientes{
+    background-image: url(../img/madera.jpg);
+    margin-top: 30px;
+    padding: 80px 0;  /*80 arriba y abajo 0 a izquierda y derecha */
+    color: #ffffff;
+}
+.ingredientes h3{
+    line-height: 40px;
+    font-size: 40px;
+    font-weight: 700;
+}
+.ingredientes p{
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.ingredientes .imagen{
+    padding-top: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ingredientes .imagen img{
+    width: 80%;
 }
