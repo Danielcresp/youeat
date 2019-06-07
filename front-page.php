@@ -60,5 +60,16 @@
             <?php $url = get_page_by_title('Galeria'); ?>
             <?php echo get_post_gallery($url->ID); ?>
         </section>
+        <section class="ubicacion-resevacion">
+            <div class="contenedor-grid">
+                <div class="columnas1-4">
+                <?php get_template_part('templates/formulario','reservacion'); ?>
+                </div>
+                <div class="columnas1-4 inicio-contacto">
+                    <!-- Llamar un template personalizado -->
+                     <?php get_template_part('templates/formulario','reservacion'); ?>
+                </div>
+            </div>
+        </section>
 
 <?php get_footer(); ?>
