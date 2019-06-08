@@ -6,6 +6,9 @@ require get_template_directory().'/inc/reservaciones.php';
 //Crear opciones para los templates
 require get_template_directory().'/inc/opciones.php';
 
+
+require get_template_directory().'/templates/keymap.php';
+
 //Función de imagen destacada
 function youeat_setup(){
     add_theme_support('post-thumbnails');
@@ -49,6 +52,14 @@ function youeat_styles(){
     wp_enqueue_script('bootstrap');
     wp_enqueue_script('bootstrapjs');
     wp_enqueue_style('style',get_stylesheet_uri());
+
+    //Agregar Async y Defer
+    function agregar_async_defer($tag,$handle){
+        if('maps' !== $handle)
+            return $tag;
+        return str_replace('src', 'async="async" defer="defer" src ',$tag);
+    }
+    add_filter('script_loader_tag','agregar_async_defer',10,2);
 }
 
 //Menu

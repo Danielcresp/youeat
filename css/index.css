@@ -370,7 +370,7 @@ footer p{
         width: 31%;
     }
     .columnas2-44 {
-        width: 50%;
+        width: 47%;
     }
     .columnas3-4 {
         width: 75%;
@@ -768,42 +768,43 @@ form.reserva-contacto input[type="submit"]{
 section.ubicacion-resevacion{
     background-image: url('../img/poster.jpg');
     background-size: 100%;
-    margin-top: 50px;
 }
 
-.columnas1-4 form.reserva-contacto{
+.columnas2-44 form.reserva-contacto{
     margin: 0;
     padding: 50px;
     
 }
-.columnas1-4.inicio-contacto{
-    margin-left: 300px;
-}
-.columnas1-4 form.reserva-contacto h2{
+
+.columnas2-44 form.reserva-contacto h2{
     color: #ffffff !important;
     font-size: 34px;
     text-align: center;
     float: left;
 }
-.columnas1-4 form.reserva-contacto .campo input,
-.columnas1-4 form.reserva-contacto .campo textarea{
+.columnas2-44 form.reserva-contacto .campo input,
+.columnas2-44 form.reserva-contacto .campo textarea{
     background-color: transparent !important;
     border: 4px solid #ffffff !important;
 }
-.columnas1-4 form.reserva-contacto  ::-webkit-input-placeholder{
+.columnas2-44 form.reserva-contacto  ::-webkit-input-placeholder{
     color: #ffffff!important;
 }
-.columnas1-4 form.reserva-contacto :-moz-placeholder{
+.columnas2-44 form.reserva-contacto :-moz-placeholder{
     color: #ffffff!important;
 }
-.columnas1-4 form.reserva-contacto ::-moz-placeholder{
+.columnas2-44 form.reserva-contacto ::-moz-placeholder{
     color: #ffffff!important;
 }
-imput[type="datetime-local"]{
+.columnas2-44 form.reserva-contacto .campo input[type="datetime-local"]{
     color: #ffffff!important;
 }
-.columnas1-4 form.reserva-contacto .campo input[type="submit"]{
+.columnas2-44 form.reserva-contacto .campo input[type="submit"]{
     border: none !important;
     background-color: #a61206 !important;
     display: inline !important;
+}
+
+#mapa{
+    height: 500px;
 }

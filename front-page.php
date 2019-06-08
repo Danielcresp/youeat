@@ -62,10 +62,11 @@
         </section>
         <section class="ubicacion-resevacion">
             <div class="contenedor-grid">
-                <div class="columnas1-4">
-                <?php get_template_part('templates/formulario','reservacion'); ?>
+                <div class="columnas2-44">
+                    <div id="mapa">
+                    </div>
                 </div>
-                <div class="columnas1-4 inicio-contacto">
+                <div class="columnas2-44 inicio-contacto">
                     <!-- Llamar un template personalizado -->
                      <?php get_template_part('templates/formulario','reservacion'); ?>
                 </div>
