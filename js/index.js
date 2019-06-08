@@ -1,12 +1,15 @@
 var map;
+console.log(opciones);
+console.log(opciones.latitud);
+console.log( parseFloat(opciones.latitud)+"   HOma  "+parseFloat(opciones.longitud));
 function initMap() { 
   var latLng={  //Objeto con las latitudes del local 
-    lat: 14.043103,
-    lng:-88.939278
+    lat: parseFloat(opciones.latitud),
+    lng: parseFloat(opciones.longitud)
   } 
   map = new google.maps.Map(document.getElementById('mapa'), {
     center: latLng,
-    zoom: 16
+    zoom: parseFloat(opciones.zoom)
   });
   var marker = new google.maps.Marker({ //añadir el puntero para ubicar el local
       position: latLng,

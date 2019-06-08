@@ -6,7 +6,7 @@ require get_template_directory().'/inc/reservaciones.php';
 //Crear opciones para los templates
 require get_template_directory().'/inc/opciones.php';
 
-
+//APi de Google
 require get_template_directory().'/templates/keymap.php';
 
 //Función de imagen destacada
@@ -53,13 +53,24 @@ function youeat_styles(){
     wp_enqueue_script('bootstrapjs');
     wp_enqueue_style('style',get_stylesheet_uri());
 
-    //Agregar Async y Defer
+    //Agregar Async y Defer para Google MAP
     function agregar_async_defer($tag,$handle){
         if('maps' !== $handle)
             return $tag;
         return str_replace('src', 'async="async" defer="defer" src ',$tag);
     }
     add_filter('script_loader_tag','agregar_async_defer',10,2);
+
+    //Pasar Variables PHP  Javascript
+    wp_localize_script(
+        'scripts',
+        'opciones', //en el js hacer console.log(opciones)
+        array(
+            'latitud' =>get_option('lapizzeria_gmap_latitud'),
+            'longitud' => get_option('lapizzeria_gmap_longitud'),
+            'zoom' => get_option('lapizzeria_gmap_zoom'),
+        )
+    );
 }
 
 //Menu
