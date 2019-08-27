@@ -3,15 +3,16 @@
         $imagen = get_post_thumbnail_id($pagina_blog); //id de la imagen
         $imagen = wp_get_attachment_image_src($imagen,'full');
 ?> 
-        <div class="hero" style="background-image:url(<?php echo  $imagen[0]; ?>);">
-            <div class="contenido-hero">
-                <div class="texto-hero">
-                  <h1><?php echo get_the_title($pagina_blog); ?></h1> <!-- Imprimir Titulo -->
-                </div>
+<div class="hero" style="background-image:url(<?php echo  $imagen[0]; ?>);">
+    <div class="contenido-hero">
+        <div class="texto-hero">
+            <h1><?php echo get_the_title($pagina_blog); ?></h1> <!-- Imprimir Titulo -->
             </div>
         </div>
-    <div class="principal contenedor">
-         <div class="contenedor-grid">
+    </div>
+</div>
+    <div class="principal contenedor container">
+         <div class="contenedor-grid entradas">
              <main class="columnas2-44 contenido-paguinas">
                 <?php  while(have_posts()): the_post();?> <!-- Recorrer informacio -->
                     <article class="entrada-blog">

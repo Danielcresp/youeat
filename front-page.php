@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
     <?php  while(have_posts()): the_post();?> <!-- Recorrer informacio -->
-        <div class="hero" style="background-image:url(<?php echo  get_the_post_thumbnail_url(); ?>);">
+        <div class="hero font" style="background-image:url(<?php echo  get_the_post_thumbnail_url(); ?>);">
             <div class="contenido-hero">
                 <div class="texto-hero">
                     <h1>  <?php echo esc_html(get_option('blogdescription')); ?></h1>

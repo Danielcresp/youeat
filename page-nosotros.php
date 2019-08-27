@@ -9,13 +9,13 @@
             </div>
         </div>
             
-        <div class="principal contenedor clear">
+        <div class="principal contenedor clear container">
              <main class="text-centrado contenido-paguinas">
                 <?php the_content();?> <!-- Comentario -->
             </main>
         </div>    
         <!-- cajas  -->
-        <div class="info-cajas-main clear">
+        <div class="info-cajas-main clear container">
             <div class="informacion-caja cont">
                 <?php 
                 $id_imagen = get_field('imagen_1');
@@ -28,14 +28,14 @@
                 </div>
             </div>
             <div class="informacion-caja cont">
-            <div class="contenido-caja pin2">
-                    <?php the_field('descripción_2');?>
-                </div>
                 <?php 
                 $id_imagen = get_field('imagen_2');
                 $imagen = wp_get_attachment_image_src($id_imagen,'nosotros');
                 ?>
                 <img src="<?php echo $imagen[0]; ?>" class="imagen-caja">
+                <div class="contenido-caja pin2">
+                    <?php the_field('descripción_2');?>
+                </div>
             </div>
             <div class="informacion-caja cont">
                 <?php 

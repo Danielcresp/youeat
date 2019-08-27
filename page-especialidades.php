@@ -14,13 +14,13 @@ get_header(); ?>
             </div>
         </div>
             
-        <div class="principal contenedor">
+    <div class="principal contenedor container">
              <main class="text-centrado contenido-paguinas">
                 <?php the_content();?> <!-- Comentario -->
             </main>
-        </div>    
+    </div>    
     <?php endwhile; ?>
-    <div class="nuetras-espicialedades contenedor">
+    <div class="nuetras-espicialedades principal contenedor container">
         <h3>Pizza</h3>
         <div class="contenedor-grid">
             <?php  

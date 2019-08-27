@@ -9,7 +9,7 @@
             </div>
         </div>
             
-        <div class="principal contenedor">
+        <div class="principal contenedor container">
              <main class="text-centrado contenido-paguinas">
                 <?php the_content();?> <!-- Comentario -->
             </main>

@@ -9,7 +9,7 @@
             </div>
         </div>
             
-        <div class="principal contenedor contacto">
+        <div class="principal contenedor contacto container">
              <main class="text-centrado contenido-paguinas">
                 <!-- Llamar un template personalizado -->
                 <?php get_template_part('templates/formulario','reservacion'); ?>

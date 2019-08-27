@@ -271,6 +271,10 @@ nav .menu-sitio ul li:hover{
 }
 
 /* ---- ---- TEmplate Contenido ---- ---- */
+ .hero{
+    width: 100%;
+ } 
+
 
 .hero{
     background-position: center;
@@ -306,11 +310,6 @@ nav .menu-sitio ul li:hover{
     width:  100%;
     z-index: 2;
 }
-.contenido-paguinas p{
-    font-size: 18px;
-    line-height: 50px;
-}
-
 .contenido-hero .texto-hero{
     padding: 0px 250px;
 }
@@ -408,52 +407,90 @@ footer p{
 .info-cajas-main{
     display: flex;
     align-items: center;
+    display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
     justify-content: center;
     /* padding: 0 60px; */
+    height: 300px;
+    flex-direction: row;
 }
-.informacion-caja > div img{
-    width: 80%;
+.info-cajas-main{
+    display: row;
+    
 }
-
+.contenido-caja{
+    width: 100% !important;
+}
+.informacion-caja{
+    height: 193px;
+    padding-bottom: 20%;
+}
+.informacion-caja img{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover; 
+}
 .informacion-caja > div{
     text-align: center;
 }
 @media only screen and (min-width:400px){
     .informacion-caja > div{
+        display: block;
         width: 50%;
-        float: left;
     }
-    .info-cajas-main{
-        display: row;
-        flex-direction: row;
-    }
+   
 }
 .informacion-caja > div:last-child{
-    width: 97%;
+    width: 100%;
 }
 @media only screen and (min-width:768px){
     .informacion-caja > div{
-        width: 97%;
+        width: 100%;
     }
     .informacion-caja > div:last-child{
-        width: 97%;
+        width: 100%;
     }
 }
 .pin1{
-    background-color: #f19f30;
+    line-height: 27px;
 }
 .pin2{
-    background-color: #3d8833;
-}
-.pin3{
-    background-color: #1c717c;
+    line-height: 30px;
+
 }
 
+
 .cont{
-    position: relative;
+    display: block;
     max-width: 500px;
     width: 100%;
 }
+/* Mobile only style */
+@media (max-width:787px) {
+    .info-cajas-main{
+        flex-wrap: wrap;
+    }
+    .info-cajas-main{ 
+        padding-bottom: 140vh;
+    }
+    .contenido-caja{
+        width: 100% !important;
+    }
+    .informacion-caja{
+        height: 193px;
+        padding-bottom: 30vh;
+    }
+    .pin2{
+        line-height: 30px;
+    }
+}
+
 
 /* ESPECIALIDADES */
 
@@ -483,7 +520,9 @@ footer p{
 }
 /* Mobile only style */
 @media (max-width:787px) {
-    
+    .nuetras-espicialedades{
+        padding: 0 5px;
+    }
 }
 /* GRID */
 
@@ -523,12 +562,19 @@ footer p{
 }
 
 /* ---- ---- BOLG ---- ---- */
+.entrada-blog{
+    padding-right: 40px;
+}
 
 article .entrada-blog img{
     margin-top: 30px;
 }
 header.informacion-entrada{
     margin-top: 20px;
+}
+.contenido-paguinas p{
+    font-size: 18px;
+    line-height: 30px;
 }
 
 header.informacion-entrada div.fecha{
@@ -537,8 +583,8 @@ header.informacion-entrada div.fecha{
     width: 60px;
     height: 60px;
     text-align: center;
-    padding-top: 5px;
-    margin-right: 2px; 
+    margin-right: 10px; 
+    padding: 5px 10px 5px 0px;
 }
 
 header.informacion-entrada div.fecha time{
@@ -547,7 +593,7 @@ header.informacion-entrada div.fecha time{
     font-weight: 700;
 }
 header.informacion-entrada div.fecha time span{
-    font-size: 16px;
+    font-size: 20px;
     display: block;
     clear: both;
     text-transform: uppercase;
@@ -556,7 +602,7 @@ header.informacion-entrada div.fecha time span{
 header.informacion-entrada  .titulo-entrada h3{
     margin-top: 20px;
     margin: 0;
-    font-size: 14px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -599,6 +645,9 @@ div.contenido-entrada p{
     text-decoration: none;
     transition: all .5s ease; 
 }
+.contenido-entrada a{
+    margin-top: 5px !important;
+}
 .button.rojo:hover{
     background-color: #f19f30;
     letter-spacing: 2px;
@@ -620,18 +669,25 @@ div.contenido-entrada p{
     background-color: #a61206;
     letter-spacing: 2px;
 }
+sidebar{
 
-ul.lista-comentarios,
-ul.lista-comentarios ul{
+}
+
+ul{
     list-style: none;
 }
-ul.lista-comentarios li.comment{
-    background-color: #e1e1e1;
+.cat-item{
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 20px; 
 }
+.cat-item a{
+    text-decoration: none;
+}
 
+li a{
+    text-decoration: none;
+}
 ul.lista-comentarios li.comment .comment-author{
     margin-bottom: 20px;
 }
@@ -642,6 +698,12 @@ ul.lista-comentarios li.comment a{
 ul.lista-comentarios li.comment ul.children li{
     background-color: white;
     margin-top: 20px;
+}
+/* Mobile only style */
+@media (max-width:787px) {
+    .cat-item a{
+        font-size: 30px;
+    }
 }
 
 /* ---- ---- SIDEBAR ---- ---- */
@@ -763,12 +825,12 @@ div.contacto{
 }
 @media only screen and (min-width:768px){
     form.reserva-contacto{
-        margin-left: 50%;
+        margin-left: 10%;
     }
 }
 form.reserva-contacto .campo{
     margin-bottom: 20px;
-    width: 100%;
+    width: 80%;
 
 }
 form.reserva-contacto h2{
@@ -803,9 +865,8 @@ form.reserva-contacto input[type="submit"]{
     margin: 0 auto;
     display: block;
 }
-/* Front page */
-
-.home .hero{
+/* Front page INICIO*/
+.hero{
     height: 650px;
 }
 @media only screen and (min-width:768px){
@@ -943,7 +1004,10 @@ form.reserva-contacto input[type="submit"]{
 
 
 /* Ubicasiones y reservacion */
-
+.ubicacion-resevacion div{
+    margin-left: 0px; 
+     margin-right: 0px;
+}
 section.ubicacion-resevacion{
     background-image: url('../img/poster.jpg');
     background-size: 100%;
