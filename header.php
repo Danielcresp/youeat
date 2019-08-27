@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-    <title>Eat</title>
+    <title>Youeat</title>
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/logo.ico" />
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
     <header class="encabezado_sitio">
-        <div class="contenedor">
+        <div class="contenedor-header container">
             <div class="logo">
                  <a href="<?php echo esc_url(home_url('/')); ?>"> <!--//sanitizacion para seguridad -->
-                   <img class='logo_img' src="<?php echo get_template_directory_uri(); ?>/img/logo.png">
+                   <img class='logo_img' src="<?php echo get_template_directory_uri(); ?>/img/pizza.png">
+                   Youeat
                 </a>
             </div><!-- .logo -->
             <div class="informacion-encabezado">
@@ -21,7 +23,7 @@
                     $args = array(
                         'theme_location' => 'social-menu',
                         'container' => 'nav',
-                        'container_class' => 'sociales',
+                        'container_class' => 'sociales fab',
                         'container_id' => 'sociales',
                         'link_before' => '<span class="sr-text">',
                         'link_after' => '</span>'

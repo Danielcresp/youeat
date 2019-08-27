@@ -3,11 +3,10 @@
         $imagen = get_post_thumbnail_id($pagina_blog); //id de la imagen
         $imagen = wp_get_attachment_image_src($imagen,'full');
 ?> 
-
         <div class="hero" style="background-image:url(<?php echo  $imagen[0]; ?>);">
             <div class="contenido-hero">
                 <div class="texto-hero">
-                <h1><?php echo get_the_title($pagina_blog); ?></h1> <!-- Imprimir Titulo -->
+                  <h1><?php echo get_the_title($pagina_blog); ?></h1> <!-- Imprimir Titulo -->
                 </div>
             </div>
         </div>

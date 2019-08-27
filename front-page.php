@@ -13,7 +13,7 @@
         </div>
     <?php endwhile; ?>
             
-        <div class="principal contenedor">
+        <div class="principal contenedor container">
              <main class="contenedor-grid">
                  <h2 class="text-rojo text-center">Nuestras Especialidades</h2>
                  <?php $args = array(
@@ -42,13 +42,13 @@
         </div>    
         <section class="ingredientes">
             <div class="contenedor">
-                <div class="contenedor-grid">
+                <div class="contenedor-grid ingredientes-pizza">
                     <?php while(have_posts()): the_post(); ?>
-                    <div class="columnas2-4">
+                    <div class="columnas2-4 ingredientes-text">
                         <?php the_field('contenido'); ?>
                         <a href="<?php echo get_permalink($url->ID); ?>" class="button rojo">Leer más</a>
                     </div>
-                    <div class="columnas2-4 imagen">
+                    <div class="columnas2-4 ingredientes-imagen">
                         <img src="<?php the_field('imagen'); ?>">
                     </div>
                 </div>
@@ -56,7 +56,7 @@
             </div>
         </section>
         <section  class="contenedor">
-            <h2 class="text-rojo texto.centrado">Galeria de Imagenes</h2>
+            <h2 class="text-rojo texto.centrado">Contactanos</h2>
             <?php $url = get_page_by_title('Galeria'); ?>
             <?php echo get_post_gallery($url->ID); ?>
         </section>

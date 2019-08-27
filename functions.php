@@ -25,15 +25,14 @@ function youeat_styles(){
     https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700,900
 
     //rigistrar stylos css
+    wp_register_style('fontawesome',get_stylesheet_directory_uri().'/css/all.css');
     wp_register_style('google_fonts',"https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700,900",array() ,'1.0');
     wp_register_style('normalize',get_template_directory_uri().'/css/normalize.css',array() ,'8.0');
     wp_register_style('style',get_template_directory_uri().'style.css',array() ,'1.0'); //css registrar en wordpress
     wp_register_style('bootstrap',"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
     wp_register_style('bootstrapjs',"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js",array('jquery'));
     wp_register_style('index',get_stylesheet_directory_uri().'/css/index.css');
-    wp_register_style('fontawesome',get_stylesheet_directory_uri().'/css/font_awesome.css');
     wp_register_style('fluidboxcss',get_stylesheet_directory_uri().'/css/fluidbox.css');
-
 
     // regitrar JS
     wp_enqueue_script('fluidbox',get_template_directory_uri().'/js/jquery.fluidbox.js',array('jquery'),'1.0.0',true);
